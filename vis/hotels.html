@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hotels</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <!-- Leaflet -->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+   integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+   crossorigin=""></script>
+	 <!-- Leaflet -->
+	 <!--Pie chart -->
+	 <script src="http://sashakavun.github.io/leaflet-canvasicon/leaflet-canvasicon.js"></script>
+	 <script type="text/javascript" src="js/leaflet/canvasIcon.js"></script>
+	<script type="text/javascript" src="js/leaflet/piechart.js"></script>
+	 <!--Pie chart -->
+   <!-- D3-->
+   <script src='js/d3.min.js'></script>
+	<!-- D3-->
+  <!-- Custom Styles -->
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+  	<link rel="stylesheet" href="css/rating.min.css">
+    <link rel='stylesheet' href='css/screen.css'>
+    <link rel="stylesheet" href="css/hotels.css">
+  <!-- Custom Styles -->
+</head>
+<body>
+	<div class="container">
+	<h1 class="header">Выберите страну и город</h1>
+	<select name="selectCountry" id="selectCountry" class="select">
+		<option value="Турция" selected>Турция</option>
+		<option value="Египет">Египет</option>
+		<option value="Болгария">Болгария</option>
+		<option value="Греция">Греция</option>
+		<option value="Черногория">Черногория</option>
+		<option value="Тунис">Тунис</option>
+		<option value="Чехия">Чехия</option>
+		<option value="Таиланд">Таиланд </option>
+		<option value="Израиль">Израиль</option>
+	</select>
+	<select name="selectCity" id="selectCity" class="select">
+		<option value="side">Сиде</option>
+		<option value="bodrum">Бодрум</option>
+		<option value="antalya">Анталия</option>
+		<option value="alanya" selected>Алания</option>
+		<option value="kemer">Кемер</option>
+		<option value="mermeris">Мермерис</option>
+		<option value="istanbul">Стамбул</option>
+	</select>
+	<div class="main">
+		<div class="expl">
+			<div class="color-expl">
+				<span class="ukr"></span>
+				<b>Украинцы</b>
+			</div>
+			<div class="color-expl">
+				<span class="rus"></span>
+				<b>Россияние</b>
+			</div>
+			<div class="color-expl">
+				<span class="others"></span>
+				<b>Другие</b>
+			</div>
+		</div>
+		<!-- <div id="mapid">
+	 	
+	 	</div>
+	 	<div class="hotel-details">
+
+	 	</div> -->
+	</div>
+	<br><br><br><br>
+	</div>
+	 <script src="js/rating.js"></script>
+	 <script src="http://sashakavun.github.io/leaflet-canvasicon/leaflet-canvasicon.js"></script>
+	 <script type="text/javascript" src="js/leaflet/piechart.js"></script>
+	 <script src="js/leaflet/leaflet.js" defer></script>
+		<!-- 	  <script src="js/script.js" defer></script>
+	  <script src="js/leaflet/grad.js" defer></script> -->
+
+	 <script>
+	 </script>
+</body>
+</html>

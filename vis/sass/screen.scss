@@ -1,0 +1,273 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+.select {
+    cursor: pointer;
+    margin: 50px;
+    background: transparent;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://www.littlebignetwork.com/public/style_images/caja/_custom/dropdown_arrow.png) 96% / 15% no-repeat #eee;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans',Helvetica, sans-serif !important;
+    background-color: #fff;
+
+    & > .container {
+        width: 100%;
+        overflow: hidden;
+        & > .header {
+            border-bottom: 1px solid #000;
+            padding-bottom:30px;
+            & > h1 {
+                color: #000 !important;
+                font-size: 2.5em;
+                padding: 30px 150px 0px 150px;
+            }
+        }
+
+        & > .container-flex {
+            & > .menu {
+               // width: 150px;
+                height: 100%;
+                margin-top: 1em;
+
+                & > .aside > .menu-list {
+                    & > .item-list {
+                        display:inline-block;
+                        cursor: pointer;
+                        font-size: 1em;
+                        padding: 15px 5px 15px 55px;
+                        //border: 1px solid #ccc;
+                        & > a{
+                            text-decoration:none;
+                            color:inherit;
+                        }
+                        & > a:hover{
+                            text-decoration:underline;
+                        }
+                    }
+                }
+            }
+
+            & > .main-content {
+                margin-top: 2em;
+                flex: 2 1 300px;
+                text-align: center;
+                font-size: 2em;
+                position:relative;
+                & .countries-frame {
+                    padding-top: 1em;
+                    margin:auto;
+                    height:900px;
+                }
+                & #selectCountries {
+                	position:absolute;
+                	left:20px;
+                	margin:0;
+                   @extend .select;
+                }
+                & #container, & .map{
+                    width:900px;
+                    margin:auto;
+                    height:400px;
+                }
+                & .caption{
+                	height: 300px;
+                	width: 135px;
+                	margin:auto;
+                	background-color: white;
+                	position:absolute;
+                	top: 60px;
+                	left: 20px;
+                	border: 1px solid black;
+                }
+            }
+        }
+    }
+    .hoverinfo{
+        & > strong{
+            font-size: 1.5em;
+        }
+    }
+}
+
+// .reset-styles-button{
+// 	-webkit-box-sizing: content-box;
+//        -moz-box-sizing: content-box;
+//             box-sizing: content-box;
+//             background: none;
+// 			border: 0;
+// 			cursor: pointer; 	
+// 			line-height: normal;
+// 			overflow: visible;
+// 			padding: 0;
+// 			-webkit-appearance: button; /* for input
+// 			-webkit-user-select: none; /* for button
+//    			-moz-user-select: none;
+//     		-ms-user-select: none;
+// }
+// .select{
+// 	cursor:pointer;
+// 	margin: 50px;
+//  // border: 1px solid #111;
+//   background: transparent;
+//   width: 150px;
+//   padding: 5px 35px 5px 5px;
+//   font-size: 16px;
+//   border: 1px solid #ccc;
+//   height: 34px;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   background: url(http://www.littlebignetwork.com/public/style_images/caja/_custom/dropdown_arrow.png) 96% / 15% no-repeat #eee;
+// }
+// body{
+// 	font-family: Arial, Helvetica, sans-serif;
+// 	text-align: center;
+// 	.header{
+// 		padding:20px;
+// 	}
+// 	h1{
+// 		font-size: 2em;
+// 	}
+// 	.main-h1{
+// 		font-weight:bold;
+// 	}
+// 	h4{
+// 		font-size: 1.2em;
+// 	}
+// 	table{
+// 		border: 1px solid #000;
+// 		border-collapse: collapse;
+// 		margin: auto;
+// 		& tr, & td, & th{
+// 			border: 1px solid #000;
+// 			border-collapse: collapse;
+// 			//margin: auto;
+// 			text-align: center;
+// 		}
+
+// 		.flag-img{
+// 			width: 50px;
+// 		}
+// 		& th{
+// 			font-size: 20px;
+// 			text-transform: uppercase;
+// 		}
+// 		&  tr > td, &  tr > th{
+// 			padding: 10px 20px 10px 20px;
+// 		}
+
+// 	}
+// 	.container-select{
+// 		margin:3em;
+// 		display: flex;
+// 		flex-wrap:wrap;
+// 		 flex-direction:row;
+//     	justify-content:space-around;
+//     	align-items:center;
+//     	& h4{
+// 			font-size: 1.4em;
+// 			padding: 15px;
+//     	}
+// 	}
+// 	.button-to-chart{
+// 			width: 60%;
+// 			margin: 1em auto;
+// 			text-align:right;
+// 		& > button{
+// 			@extend .reset-styles-button;
+// 			padding: 10px 40px;
+// 			border: 1px solid #ccc;
+//   			background: transparent;
+// 		//color:blue;
+// 			font-size: 16px;
+// 		//text-transform:uppercase;
+// 			font-family: Arial, Helvetica, sans-serif;
+// 			background-color: #eee;
+// 		}
+// 	}
+// .popular-countries{
+// 	padding:1em 0 1em 0;
+// 	h4{
+// 		padding: 1em;
+// 	}
+
+// 	.map-container{
+// 		text-align: center;
+// 		width:80%;
+// 		margin:auto;
+// 		position:relative;
+// 		&  .scale-of-colors{
+// 			position: absolute;
+// 			left:0;
+// 			top:40%;
+// 		}
+// 		// & > .density{
+// 		// 	// width:50px;
+// 		// 	// height: 100px;
+// 		// 	display:block;
+// 		// 	position: relative;
+// 		// 	margin-top:2em;
+
+// 		// 	// & > .name-of-colors{
+// 		// 	// 	position:absolute;
+// 		// 	// 	right:0;
+// 		// 	// 	top:40;
+// 		// 	// }
+// 		// }
+// 	}
+// 	.quantity{
+// 		display:inline-block;
+// 		padding-top:-160px;
+// 	}
+// 	.scale-points-container{
+// 		width: 80px;
+// 		height:20px;
+// 	}
+// 	.rect-color{
+// 		// display: inline-block;
+// 		width:10px;
+// 		height: 20px;
+// 	}
+// }
+// 	.frame-wrap{
+// 		width: 1000px;
+// 		height: 600px;
+// 		padding: 0;
+// 		overflow: hidden;
+
+// 		& > .frame{
+// 			width: 1000px;
+// 			height: 600px;
+// 			border: 0;
+//     	// -ms-transform: scale(0.25);
+//     	// -moz-transform: scale(0.25);
+//     	// -o-transform: scale(0.25);
+//      //    -webkit-transform: scale(0.25);
+//     	//  transform: scale(0.25);
+
+//     	// -ms-transform-origin: 0 0;
+//     	// -moz-transform-origin: 0 0;
+//     	// -o-transform-origin: 0 0;
+//     	// -webkit-transform-origin: 0 0;
+//     	// transform-origin: 0 0;
+// 		}
+// 	}
+// }

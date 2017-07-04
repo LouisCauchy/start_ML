@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seasonality</title>
+    <link rel='stylesheet' href='css/screen.css'>
+    <link rel='stylesheet' href='css/season.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+    <header class="header">
+            <h1>Сезонность путешествий</h1>
+        </header>
+        <select name="selectSeason" id="selectSeason" class="select selectSeason">
+            <option value="winter" selected>Зима</option>
+            <option value="spring">Весна</option>
+            <option value="summer">Лето</option>
+            <option value="autumn">Осень</option>
+        </select>
+        <select name="selectCountry" id="selectCountry" class="select selectCountry">
+            <option value="winter" selected>Украина</option>
+            <option value="spring">Россия</option>
+            <option value="summer">Беларусь</option>
+            <option value="autumn">Не указали</option>
+        </select>
+        <h4>За всё время, среди всех пользователей</h4>
+        <div class="season winter">
+          <!--  <svg class="chart" id="chart"></svg> -->
+        </div>
+    </div>
+   <!--  <svg class="chart"></svg> -->
+    <script src="js/season.js"></script>
+</body>
+
+</html>

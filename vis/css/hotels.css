@@ -1,0 +1,101 @@
+/* line 1, ../sass/hotels.scss */
+body {
+  background-color: #fff;
+}
+/* line 4, ../sass/hotels.scss */
+body > .container {
+  position: relative;
+}
+/* line 7, ../sass/hotels.scss */
+body > .container > * {
+  font-family: 'Open Sans',Helvetica, sans-serif !important;
+  background-color: #fff;
+}
+/* line 12, ../sass/hotels.scss */
+body > .container .header {
+  font-size: 2.5em;
+  padding: 40px;
+}
+/* line 17, ../sass/hotels.scss */
+body > .container a.details {
+  cursor: pointer !important;
+}
+/* line 21, ../sass/hotels.scss */
+body > .container > .main {
+  width: 100%;
+}
+/* line 25, ../sass/hotels.scss */
+body > .container > .main #mapid {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff !important;
+  width: 60%;
+  height: 500px;
+  margin: 2em;
+}
+/* line 33, ../sass/hotels.scss */
+body > .container > .main #mapid i.hotel_id {
+  display: none !important;
+}
+/* line 38, ../sass/hotels.scss */
+body > .container > .main .hotel-details {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #EEEEEE;
+  width: 30%;
+  height: 600px;
+  margin: 2em 0 2em 2em;
+  text-align: center;
+}
+/* line 47, ../sass/hotels.scss */
+body > .container > .main .hotel-details .hotel-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+}
+/* line 53, ../sass/hotels.scss */
+body > .container > .main .hotel-details .line-graph {
+  margin: 1em;
+}
+/* line 55, ../sass/hotels.scss */
+body > .container > .main .hotel-details .line-graph path {
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+/* line 61, ../sass/hotels.scss */
+body > .container > .main .hotel-details .line-graph .axis path,
+body > .container > .main .hotel-details .line-graph .axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+/* line 71, ../sass/hotels.scss */
+body > .container > .main > .expl {
+  margin-left: 2em;
+}
+/* line 74, ../sass/hotels.scss */
+body > .container > .main > .expl > .color-expl {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 78, ../sass/hotels.scss */
+body > .container > .main > .expl > .color-expl > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+}
+/* line 84, ../sass/hotels.scss */
+body > .container > .main > .expl > .color-expl > span.ukr {
+  background-color: rgba(255, 246, 19, 0.81);
+}
+/* line 88, ../sass/hotels.scss */
+body > .container > .main > .expl > .color-expl > span.rus {
+  background-color: rgba(255, 0, 102, 0.81);
+}
+/* line 92, ../sass/hotels.scss */
+body > .container > .main > .expl > .color-expl > span.others {
+  background-color: rgba(4, 226, 21, 0.81);
+}

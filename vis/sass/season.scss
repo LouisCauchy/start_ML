@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .selectSeason{
+        position: absolute;
+        right: 10%;
+        top: 25%;
+        display: block;
+        background-color: transparent;
+        margin: 0;
+    }
+    .selectCountry{
+
+    }
+    .season {
+        width: 75% !important;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        #chart {
+            margin: 7px;
+            width: 700px !important;
+            height: 500px !important;
+        }
+    }
+
+    .winter {
+        background-color: #B0E0F8 !important;
+        .chart rect {
+        	fill: steelblue;
+    	}
+    }
+
+    .spring {
+        background-color: #8DF47D !important;
+        .chart rect {
+        	fill: #55AA55;
+   		}
+    }
+
+    .summer {
+        background-color: #FFE252 !important;
+        .chart rect {
+        	fill: #FF7134;
+   		}
+   // 		.chart text{
+			// fill:
+   // 		}
+    }
+
+    .autumn {
+        background-color: #FF7400 !important;
+        .chart rect {
+        	fill: #EF002F;
+   		}
+    }
+
+    .chart {
+        margin-top: 4em;
+        rect{
+        	//stroke:white;
+        }
+    }  
+
+    .chart text {
+        fill: white;
+    }
+
+    .chart text.name {
+        fill: #fff;
+    }
+
+    .chart line {
+        //stroke: #c1c1c1;
+    }
+
+    .chart .rule {
+        fill: #000;
+    }
+
+    // .axis path,
+    // .axis line {
+    //     fill: none;
+    //     stroke: none;
+    //     shape-rendering: crispEdges;
+    // }
+}

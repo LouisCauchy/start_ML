@@ -1,0 +1,100 @@
+body {
+    background-color: #fff;
+
+    & > .container {
+        position: relative;
+
+        & > * {
+            font-family: 'Open Sans',Helvetica, sans-serif !important;
+            background-color: #fff;
+        }
+
+        .header {
+            font-size: 2.5em;
+            padding: 40px;
+        }
+
+        a.details {
+            cursor: pointer !important;
+        }
+
+        & > .main {
+            width: 100%;
+
+            //text-align:center;
+            #mapid {
+                display: inline-block;
+                vertical-align: middle;
+                background-color: #fff !important;
+                width: 60%;
+                height: 500px;
+                margin: 2em;
+
+                & i.hotel_id {
+                    display: none !important;
+                }
+            }
+
+            .hotel-details {
+                vertical-align: middle;
+                display: inline-block;
+                background-color: #EEEEEE;
+                width: 30%;
+                height: 600px;
+                margin: 2em 0 2em 2em;
+                text-align: center;
+
+                .hotel-title {
+                    text-align: center;
+                    font-size: 2em;
+                    padding: 1em;
+                }
+
+                .line-graph {
+                    margin: 1em;
+                    path {
+                        stroke: steelblue;
+                        stroke-width: 2;
+                        fill: none;
+                    }
+
+                    .axis path,
+                    .axis line {
+                        fill: none;
+                        stroke: grey;
+                        stroke-width: 1;
+                        shape-rendering: crispEdges;
+                    }
+                }
+            }
+
+            & > .expl {
+                margin-left: 2em;
+
+                & > .color-expl {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    & > span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-color: pink;
+
+                        &.ukr {
+                            background-color: rgba(255, 246, 19, 0.81);
+                        }
+
+                        &.rus {
+                            background-color: rgba(255, 0, 102, 0.81);
+                        }
+
+                        &.others {
+                            background-color: rgba(4, 226, 21, 0.81);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
